@@ -20,4 +20,22 @@ describe('isIsogram', () => {
   it('should return false for `Oops!`', () => {
     expect(isIsogram(`Oops!`)).toBe(false);
   });
+
+  it('should return true for `playgrounds`', () => {
+    const word = `playgrounds`;
+
+    expect(isIsogram(word)).toBe(true);
+  });
+
+  it('should return false for `look`', () => {
+    const word = 'look';
+
+    expect(isIsogram(word)).toBe(false);
+  });
+
+  it('should return false for word `Adam`', () => {
+    const word = 'Adam';
+
+    expect(isIsogram(word)).toBe(false);
+  });
 });
